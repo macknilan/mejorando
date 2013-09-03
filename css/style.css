@@ -128,9 +128,12 @@ nav #publicar_nav a
 
 #contenido .item
 {
+	background: white;
+	border-bottom:3px #22bce0 solid;
+	margin-bottom: 3em;
+	min-height: 128px;
 	/*border:1px solid #000000;*/
-	background: #FFFFFF;
-	border-bottom:3px solid #22bce0;
+	position: relative;
 }
 
 #contenido .item p
@@ -170,4 +173,15 @@ nav #publicar_nav a
 #contenido .item .imagen_item img
 {
 	width: 96px;
+}
+
+#contenido .item .votacion
+{
+	background: white;
+	/*border: 1px solid red;*/
+	margin: 30px 0 0 0;
+	position: absolute;
+	top: 100%;
+	width: 96px;
+
 }
