@@ -126,9 +126,16 @@ nav #publicar_nav
 nav #publicar_nav a
 {
 	background: #DD522C;
+	border: 1px solid yellow;
 	padding: 0.5em 1em;
 	text-decoration: none;
+}
 
+nav #publicar_nav a:after
+{
+	content: "\e003";
+	font-family: "icomoon";
+	
 }
 
 #contenido
@@ -202,5 +209,17 @@ nav #publicar_nav a
 #contenido .item .votacion .up:after
 {
 	content: "\e001";
+	font-family: "icomoon";
+}
+
+#contenido .item .votacion .down:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+}
+
+#contenido .item .datos_item .guardar_item:after
+{
+	content: "\e002";
 	font-family: "icomoon";
 }
