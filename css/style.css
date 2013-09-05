@@ -63,7 +63,15 @@ header #avatar figcaption
 	background-color: #20bcdf;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+	opacity: 0.5;
+}
+
+header #avatar figcaption:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+	font-size: 0.7em;
 }
 
 header #avatar img
@@ -117,25 +125,42 @@ nav #flechita_nav a
 	padding: 0.5em 0.5em;
 	text-decoration: none;
 }
+
+nav #flechita_nav a:after
+{
+	content: "\e004";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
+}
+
 nav #publicar_nav
 {
+	background: #DD522C;
 	float: right;
 	margin-right:0;
+	padding-right: 1em;
+	position: relative;
 }
 
 nav #publicar_nav a
 {
-	background: #DD522C;
-	border: 1px solid yellow;
+	display: inline-block;
+	margin-right:  0;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
 
 nav #publicar_nav a:after
 {
+	color: rgba(255,255,255,0.5);
 	content: "\e003";
 	font-family: "icomoon";
-	
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
+
 }
 
 #contenido
@@ -158,6 +183,18 @@ nav #publicar_nav a:after
 {
 	color: #7a7a7a;
 	font-size: 0.9em;
+}
+
+#contenido .item .datos_item .guardar_item
+{
+	text-decoration: none;
+}
+
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #fd5;
+	content: "\e002";
+	font-family: "icomoon";
 }
 
 #contenido .item .datos_item .tag_item
@@ -206,20 +243,25 @@ nav #publicar_nav a:after
 	width: 96px;
 }
 
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+
+#contenido .item .votacion .up:after,
+#contenido .item .votacion .down:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+
 #contenido .item .votacion .up:after
 {
 	content: "\e001";
-	font-family: "icomoon";
 }
 
 #contenido .item .votacion .down:after
 {
 	content: "\e000";
-	font-family: "icomoon";
-}
-
-#contenido .item .datos_item .guardar_item:after
-{
-	content: "\e002";
-	font-family: "icomoon";
 }
