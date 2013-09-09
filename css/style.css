@@ -29,6 +29,22 @@ body
 	margin: 0;
 }
 
+footer
+{
+	background-color: #434343;
+	color: #a7a7a7;
+	padding: 1em 0;
+	position: relative;
+	text-align: center;
+	top: 15px;
+	width: 100%;
+}
+
+footer p
+{
+	margin: 0;
+}
+
 header
 {
 	background: #434343;
@@ -143,6 +159,11 @@ nav #publicar_nav
 	position: relative;
 }
 
+#bienvenida
+{
+	display: none;
+}
+
 nav #publicar_nav a
 {
 	display: inline-block;
@@ -185,8 +206,25 @@ nav #publicar_nav a:after
 	font-size: 0.9em;
 }
 
+#contenido .item .datos_item
+{
+	text-align: right;
+}
+
+#contenido .item .datos_item .comentario_item
+{
+	
+	background-color: #878787;
+	border-radius: 4px;
+	color: #FFFFFF;
+	margin: 0 0 0 2em;
+	padding: 4px;
+	text-decoration: none;
+}
+
 #contenido .item .datos_item .guardar_item
 {
+	margin: 0 1em;
 	text-decoration: none;
 }
 
@@ -204,7 +242,9 @@ nav #publicar_nav a:after
 	color: #FFFFFF;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
+	float: left;
 }
+
 
 #contenido .item .imagen_item
 {
